@@ -1,0 +1,12 @@
+h3{font-family: 'Roboto', sans-serif;}
+.titulo{width: 100%; float: left; background-color:#bbb;}
+ul{list-style: none;}
+li{font-family: 'Roboto', sans-serif;border-radius: 8px;padding: 10px 15px;
+    height: 44px;
+    color: #374957;
+    font-weight: 400;
+    margin: 0;
+    border: 1px solid #cfd9e0;}
+.cuerpo{width: 100%;float: left; height: 500px; background-color:#1abc9c ; padding-top: 100px;}
+.cuerpo img{border-radius: 200px}
+.cuerpo p{text-align: center;}
