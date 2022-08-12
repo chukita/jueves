@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hola mundo</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+ </head>   
 
-<style>
+<body style="font-family: 'Montserrat', sans-serif;">
 
-</style>
+<h2>Ficha Personal</h2>
 
-<script>
-  function suma(){
-    var puntos = Number(document.getElementById("puntos").innerHTML);
-    var suma   = puntos + 1;
-    document.getElementById("puntos").innerHTML = suma;
-  }
+<form>
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Apellido:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
 
-</script>
+  <div id="menor" style="display:none">
 
+  <label for="fnamer">Nombre Responsable:</label><br>
+  <input type="text" id="fnamer" name="fnamer" value=""><br>
+  <label for="lnamer">Apellido Responsable:</label><br>
+  <input type="text" id="lnamer" name="lnamer" value=""><br>
 
-</head>
-<body>
-    <div class="titulo">
-        <div style="width: 29%; float: left; padding-left: 1%;" ><h3>TITULO DE LA PAGINA</h3></div>
-        <div style="width: 70%; float: left;">
-            <ul>
-                <li style="width: 100px; float: left;">item 1</li>
-                <li style="width: 100px; float: left;">item 2</li>
-                <li style="width: 100px; float: left;"><div></div></li>
-            </ul>
-        </div>
-    </div>
-    <div class="cuerpo">
-            
-        <p><img src="img/aguila.jpg"></p>
-
-        <input type="button" value="SUMAR PUNTOS" onclick="suma()" >
-
-            <p>Tus puntos son: <span id="puntos">0</span></p>
+</div>
 
 
-    </div>
+
+</form> 
+
 </body>
+<script src="fichaPersonaMenor.js" type="module"></script>
+
+
 </html>
